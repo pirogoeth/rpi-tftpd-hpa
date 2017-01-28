@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tftpd:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pirogoeth/rpi-tftpd-hpa:latest
+    restart: always
+    network_mode: host
+    volumes:
+      - /opt/tftpd/root:/tftproot:ro

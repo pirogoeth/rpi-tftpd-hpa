@@ -1,4 +1,4 @@
-FROM privateport/alpine-rpi:3.3
+FROM armhf/alpine:latest
 MAINTAINER Sean Johnson <sean.johnson@maio.me>
 
 RUN apk add --update tftp-hpa
